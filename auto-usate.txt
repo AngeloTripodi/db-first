@@ -1,20 +1,20 @@
 Nome Tabella: Auto Usate
 
 ID                              || Intero       || SMALLINT         || PRIMARY_KEY, AUTO_INCREMENT, UNIQUE
-Marca                           || Stringa      || VARCHAR(20)      || 
-Modello                         || Stringa      || VARCHAR(25)      || 
-Anno Immatricolazione           || Data         || DATE             ||
-Cilindrata                      || Intero       || SMALLINT         ||
-CV                              || Intero       || SMALLINT         ||
-Targa                           || Stringa      || VARCHAR(7)       || 
-Provenzienza                    || Stringa      || VARCHAR(20)      || 
-Classe ambientale               || Stringa      || VARCHAR(5)       || 
-Tipologia                       || Stringa      || VARCHAR(10)      || 
-Chilometraggio                  || Intero       || INT              || 
-Prezzo Acquisto                 || Float        || FLOAT (10,2)     || 
-Prezzo Vendita                  || Float        || FLOAT (10,2)     || 
-Colore                          || Stringa      || VARCHAR(10)      || 
-Cambio                          || Stringa      || VARCHAR(15)      || 
-Alimentazione                   || Stringa      || VARCHAR(20)      || 
-Posti                           || Intero       || TINYINT          ||
-Porte                           || Intero       || TINYINT          ||
+Marca                           || Stringa      || VARCHAR(20)      || NOTNULL
+Modello                         || Stringa      || VARCHAR(25)      || NOTNULL
+Anno Immatricolazione           || Data         || DATE             || NOTNULL
+Cilindrata                      || Intero       || SMALLINT         || NOTNULL
+CV                              || Intero       || SMALLINT         || NOTNULL
+Targa                           || Stringa      || VARCHAR(7)       || UNIQUE, NOTNULL
+Provenzienza                    || Stringa      || VARCHAR(20)      || NULL
+Classe ambientale               || Stringa      || VARCHAR(5)       || NOTNULL
+Tipologia                       || Stringa      || VARCHAR(10)      || NULL
+Chilometraggio                  || Intero       || INT              || NOTNULL, DEFAULT(0)
+Prezzo Acquisto                 || Float        || FLOAT (10,2)     || NULL
+Prezzo Vendita                  || Float        || FLOAT (10,2)     || NOTNULL
+Colore                          || Stringa      || VARCHAR(10)      || NOTNULL
+Cambio                          || Stringa      || VARCHAR(15)      || NOTNULL
+Alimentazione                   || Stringa      || VARCHAR(20)      || NOTNULL
+Posti                           || Intero       || TINYINT          || NOTNULL
+Porte                           || Intero       || TINYINT          || NOTNULL
