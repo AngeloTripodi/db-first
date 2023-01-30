@@ -1,20 +1,20 @@
 Nome Tabella: Auto Usate
 
-ID                              || Intero      || SMALLINT      || PRIMARY_KEY, AUTO_INCREMENT, UNIQUE
-Marca
-Modello
-Anno Immatricolazione
-Cilindrata
-CV
-Targa
-Provenzienza
-Classe ambientale
-Tipologia
-Chilometraggio
-Prezzo Acquisto
-Prezzo Vendita
-Colore
-Cambio
-Alimentazione
-Posti
-Porte
+ID                              || Intero       || SMALLINT         || PRIMARY_KEY, AUTO_INCREMENT, UNIQUE
+Marca                           || Stringa      || VARCHAR(20)      || 
+Modello                         || Stringa      || VARCHAR(25)      || 
+Anno Immatricolazione           || Data         || DATE             ||
+Cilindrata                      || Intero       || SMALLINT         ||
+CV                              || Intero       || SMALLINT         ||
+Targa                           || Stringa      || VARCHAR(7)       || 
+Provenzienza                    || Stringa      || VARCHAR(20)      || 
+Classe ambientale               || Stringa      || VARCHAR(5)       || 
+Tipologia                       || Stringa      || VARCHAR(10)      || 
+Chilometraggio                  || Intero       || INT              || 
+Prezzo Acquisto                 || Float        || FLOAT (10,2)     || 
+Prezzo Vendita                  || Float        || FLOAT (10,2)     || 
+Colore                          || Stringa      || VARCHAR(10)      || 
+Cambio                          || Stringa      || VARCHAR(15)      || 
+Alimentazione                   || Stringa      || VARCHAR(20)      || 
+Posti                           || Intero       || TINYINT          ||
+Porte                           || Intero       || TINYINT          ||
