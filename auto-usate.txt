@@ -1,4 +1,4 @@
-Nome Tabella: Auto Usate
+Nome Tabella: AUTO
 
 ID                              || Intero       || SMALLINT         || PRIMARY_KEY, AUTO_INCREMENT, UNIQUE
 Marca                           || Stringa      || VARCHAR(20)      || NOTNULL
@@ -18,3 +18,4 @@ Cambio                          || Stringa      || VARCHAR(15)      || NOTNULL
 Alimentazione                   || Stringa      || VARCHAR(20)      || NOTNULL
 Posti                           || Intero       || TINYINT          || NOTNULL
 Porte                           || Intero       || TINYINT          || NOTNULL
+Descrizione Veicolo             || Stringa      || TEXT             || NULL
